@@ -14,7 +14,6 @@ namespace ConsoleUI
         private const int k_ExitOption = 8;
 
 
-        // $G$ NTT-999 (-3) This kind of field should be readonly.
         private GarageSystem m_GarageSystem;
 
         public GarageSystemConsoleUI() // c'tor
@@ -45,8 +44,6 @@ Welcome to the garage system!");
                 Console.Clear();
                 try
                 {
-                    // $G$ CSS-018 (-3) You should have used enumerations here.
-
                     switch (option)
                     {
                         case 1:
@@ -452,7 +449,6 @@ Please insert how many liters of fuel you would like to refuel:",
             return (eFuelType)GetValidInputs.GetValidInputNumber(1, FuelSystem.k_NumOfFuelTypes);
         }
 
-        // $G$ DSN-002 (-10) The UI should not know Car\Truck\Motorcycle
         private void getVehiliceType(out eTypeOfVehicle o_TypeOfVehicle)
         {
             Console.WriteLine(

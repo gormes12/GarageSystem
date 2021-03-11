@@ -14,17 +14,12 @@ namespace GarageLogic
         Soler
     }
 
-
-    // $G$ CSS-999 (-3) Each enum\struct\class which is non nested should be in separate file
-
     public class FuelSystem : EnergySourceSystem
     {
         private readonly float r_MaxFuelInLiters;
         public const int k_NumOfFuelTypes = 4;
         private float m_CurrFuelInLiters;
 
-
-        // $G$ DSN-999 (-4) The "fuel type" field should be readonly member of class FuelEnergyProvider.
         private eFuelType m_FuelType;
 
         public FuelSystem(float i_MaxFuelInLiters, eFuelType i_FuelType)

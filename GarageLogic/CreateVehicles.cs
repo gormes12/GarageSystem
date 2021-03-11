@@ -15,9 +15,6 @@ namespace GarageLogic
         Truck
     }
 
-
-    // $G$ CSS-999 (-3) Each enum\struct\class which is non nested should be in separate file
-
     public class CreateVehicles
     {
         public static Vehicle CreateVehicle(eTypeOfVehicle i_TypeOfVehicle, string i_LicenseNumber)

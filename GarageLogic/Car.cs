@@ -20,9 +20,6 @@ namespace GarageLogic
         Silver 
     }
 
-
-    // $G$ CSS-999 (-3) Each enum\struct\class which is non nested should be in separate file
-
     public class Car : Vehicle
     {
         public const uint k_NumOfColorsOptions = 4;
